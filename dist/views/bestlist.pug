@@ -21,7 +21,7 @@ block content
 				input(class="col", type="text", v-model="newthing")
 				span(class="col btn", v-bind:class="{disabled: isDisabled}", v-on:click="addThing") Lisaa kiva juttu
 
-		div(class="section row")
+		div(class="row")
 			div(class="col")
 				p {{ errortext }}
 			div(class="load-circle col preloader-wrapper small", v-bind:class="{active: isDisabled}")
@@ -32,5 +32,9 @@ block content
 						div(class="circle")
 					div(class="circle-clipper right")
 						div(class="circle")
+		div(class="row")
+			div(class="col")
+				p {{ infotext }}
+
 	
 	script(type="text/javascript", src="../main.js")
