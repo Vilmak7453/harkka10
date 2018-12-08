@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/dist'));
 app.use(session({
 	secret: 'passport',
-	cookie: { maxAge: 60000 },
+	cookie: { maxAge: 6000000 },
 	resave: false,
 	saveUninitialized: false
 }));
